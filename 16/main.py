@@ -8,11 +8,11 @@ def main():
     coffee_maker = CoffeeMaker()
     payment = MoneyMachine()
 
-    flag = True
-    while flag:
+    is_on = True
+    while is_on:
         choice = input("What would you like? (espresso/latte/cappuccino): ")
         if choice == "off":
-            flag = False
+            is_on = False
         elif choice == "report":
             coffee_maker.report()
             payment.report()
